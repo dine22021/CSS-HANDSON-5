@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/4577/4577383.png" type="image/x-icon">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            font-family: poppins, sans-serif;
+            background-image: url("https://source.unsplash.com/1980x1080/?landscape");
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        #title {
+            text-decoration: underline;
+        }
+        #imagemap {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">Image Map</h1>
+    <div class="image">
+        <img src="intern.jpg" alt="The Intern Movie" usemap="#intern" id="images">
+    </div>
+    <map name="intern">
+        <area shape="rect" coords="271,131,884,536" href="https://www.imdb.com/title/tt2361509/" alt="The intern Movie">
+    </map>
+    <br>
+    <h1>Click on Suitcase to get to the website</h1>
+</body>
+</html>
